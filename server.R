@@ -6,6 +6,8 @@
 #
 
 library(shiny)
+require(reshape2)
+require(ggplot2)
 
 shinyServer(function(input, output) {
   output$distPlot <- renderPlot({
@@ -35,8 +37,6 @@ shinyServer(function(input, output) {
       history = rbind(history, data.frame(time, S, I, R, D))
     }
     #And finally plot
-    require(reshape2)
-    require(ggplot2)
     plotdat = melt(history, id.vars = c("time"))
     ggplot(data=plotdat)+
       aes(x=time, y=value, color=variable)+
