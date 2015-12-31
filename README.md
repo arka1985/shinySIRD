@@ -5,6 +5,6 @@ I am writing a series of blog posts on this subject. This [introductory post](ht
 
 You can run this model locally (on your own Shiny server) using the command _runGitHub("shinySIRD", "jpoles1")_
 
-You can also see this model in action by visiting a [hosted copy](https://jpoles1.shinyapps.io/shinySIRD) on ShinyApps.io (thanks to the R/Shiny team for providing this great hosting resource!)
+You can also see this model in action by visiting a [hosted copy](https://jpoles1.shinyapps.io/shinySIRD) on ShinyApps.io (thanks to the RStudio/Shiny team for providing this great hosting resource!)
 
 !["Example Output"](https://github.com/jpoles1/shinySIRD/raw/master/screenshot.png "Example Output")
