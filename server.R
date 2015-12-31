@@ -43,7 +43,7 @@ shinyServer(function(input, output) {
       geom_line(size=2)+
       theme_set(theme_gray(base_size = 15))+
       xlab("Time Step")+ylab("# Indv.")+
-      ggtitle(paste("SIRD Dynamics\nβ=",beta,"; γ=",gamma,"; μ=",mu,"\n", sep=""))+
+      ggtitle(paste("SIRD Epidemic Dynamics\nβ=",beta,"; γ=",gamma,"; μ=",mu,"\n", sep=""))+
       scale_color_manual(name="Disease State", values=c("blue", "orange", "green", "red"))
   })
   
