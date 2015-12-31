@@ -21,7 +21,6 @@ shinyServer(function(input, output) {
     beta = input$beta
     gamma = input$gamma
     mu = input$mu
-    densityDep = input$densityDep
     #Create History Dataframe
     history = data.frame(time=0, S=S,I=I,R=R,D=D);
     #Loop over step function
